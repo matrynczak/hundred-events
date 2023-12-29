@@ -18,7 +18,6 @@ function App() {
         <PlacesList places={placesMock} selectedPlace={selectedPlace} handleSelectedPlace={handleSelectedPlace}/>
         <Map places={placesMock} selectedPlace={selectedPlace} handleSelectedPlace={handleSelectedPlace}/>
       </div>
-      
     </div>
   );
 }

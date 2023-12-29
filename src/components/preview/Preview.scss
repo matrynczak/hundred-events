@@ -2,10 +2,8 @@
     position: relative;
     margin-left: 80vw;
     background-color: rgb(203 203 205);
-    height: 100vh;
+    height: 95vh;
     margin-top: -5vh;
-    // animation: smooth-appear 1s ease forwards;
-    // transform: translateX(-101%);
     overflow-y: scroll;
 }
 
@@ -42,11 +40,47 @@
     }
   }  
 
+@keyframes smooth-appear-tablet {
+    from {
+        width: 0;
+    }
+    to{
+        width: calc(50vw);
+    }
+}
+
+@keyframes smooth-disappear-tablet {
+    from {
+        width: calc(50vw);
+    }
+    to{
+        width: 0;
+    }
+}  
+
+@keyframes smooth-appear-mobile {
+    from {
+        width: 0;
+    }
+    to{
+        width: calc(80vw);
+    }
+}
+
+@keyframes smooth-disappear-mobile {
+    from {
+        width: calc(80vw);
+    }
+    to{
+        width: 0;
+    }
+} 
+
 .preview-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5vh;
+    gap: 3vh;
 }
 
 .preview-year {
@@ -102,9 +136,56 @@
 }
 
 .preview-more-link {
-    margin: -2vw 0 -2vw 2vw;
+    margin: -1vh 0 -1vh 2vw;
     background-color: black;
     color: white;
     padding: 4px;
     border-radius: 10px;
+}
+
+@media (max-width: 999px) {
+    .preview-container {
+        margin-left: 100vw;
+        height: calc(79vh + 6px);
+    }
+
+    .preview-content {
+        gap: 1vh;
+    }
+    
+    .preview-more-link {
+        margin: 0 0 0 2vw;
+    }
+
+    .preview-desc {
+        margin: 0 3vw 3vh 3vw;
+    }
+
+    .animation-in {
+        animation: smooth-appear-tablet 1s ease forwards;
+        transform: translateX(-100%);
+    }
+    
+    .animation-out {
+        animation: smooth-disappear-tablet 1s ease forwards;
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 500px) {
+    .preview-container {
+        margin-left: 100vw;
+        height: 73vh;
+        margin-top: -12vh;
+    }
+
+    .animation-in {
+        animation: smooth-appear-mobile 1s ease forwards;
+        transform: translateX(-100%);
+    }
+    
+    .animation-out {
+        animation: smooth-disappear-mobile 1s ease forwards;
+        transform: translateX(-100%);
+    }
 }

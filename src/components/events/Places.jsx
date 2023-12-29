@@ -68,7 +68,7 @@ const Places = ({places, selectedPlace, handleSelectedPlace}) => {
             <ul className={`places-list-map ${selectedTooltipToPreview !== null ? 'preview-open' : ''}`}>
                 {
                 reducedPlacesArray.map((p, index) => (
-                    <li key={index} className="single-place" style={{top: `${p.top}vw`, left: `${p.left}vw`}}>
+                    <li key={index} className="single-place" style={{top: `${window.innerWidth > 999 ? p.top : p.topMobile}vw`, left: `${window.innerWidth > 999 ? p.left : p.leftMobile}vw`}}>
                         <img className='point' src={require('../images/point.png')} onClick={()=> handleTooltipSelection(index)}></img>
                         { (selectedPlace === p.name || selectedPointOnMap === index) && renderTooltips(places, p.name) }
                     </li>

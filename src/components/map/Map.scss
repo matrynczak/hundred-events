@@ -1,10 +1,25 @@
 .map-container {
     width: 75vw;
-    // height: 50vw;
     position: relative;
     margin-top: 5vh;
 }
 
 .map-image {
     width: 62.5%;
+}
+
+@media (max-width: 999px) {
+    .map-container {
+        width: 100vw;
+    }
+
+    .map-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) { 
+    .map-container {
+        top: 7vh;
+    }
 }

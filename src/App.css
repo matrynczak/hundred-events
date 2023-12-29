@@ -8,5 +8,16 @@
 .page-content {
   display: flex;
   text-align: center;
-  min-height: 100vh;
+  min-height: 95vh;
+}
+
+@media (max-width: 999px) {
+  .App {
+    min-height: 0;
+  }
+
+  .page-content {
+    flex-direction: column;
+    min-height: 0;
+  }
 }

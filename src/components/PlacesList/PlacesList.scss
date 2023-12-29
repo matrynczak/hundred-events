@@ -1,6 +1,8 @@
 .places-side-list-wrapper {
     width: 20vw;
     border-right: 3px solid;
+    overflow-y: scroll;
+    max-height: 95vh;
 }
 
 .places-side-list {
@@ -28,4 +30,31 @@
 .active-place {
     background-color: black;
     color: white;
+}
+
+@media (max-width: 999px) {
+    .places-side-list-wrapper {
+      width: 100vw;
+      border-right: none;
+      border-bottom: 1px solid;
+      height: 15vh;
+      padding: 0 5px 0 5px;
+    }
+
+    .places-side-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .side-place-name {
+        font-size: small;
+        margin: 0 5px 0 5px;
+    }
+}
+
+@media (max-width: 500px) { 
+    .places-side-list-wrapper {
+        max-height: 20vh;
+    }
 }
