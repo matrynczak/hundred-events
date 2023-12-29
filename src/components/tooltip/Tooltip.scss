@@ -1,0 +1,36 @@
+.tooltip-wrapper {
+    background-color: black;
+    color: white;
+    padding: 4px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: x-small;
+    margin-left: 2px;
+}
+
+.tooltip-place-name {
+    text-decoration: underline;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.tooltip-close-wrapper {
+    margin: 0 0 0 3px;
+}
+
+.close-icon {
+    background-color: white;
+    color: black;
+    padding: 0 2px;
+    font-weight: bold;
+    font-size: x-small;
+    cursor: pointer;
+}
+
+.tooltip-event-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+}

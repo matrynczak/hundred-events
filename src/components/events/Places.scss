@@ -1,0 +1,51 @@
+.places-list-map {
+    list-style: none;
+    padding: 0;
+    // height: 50vw;
+    width: 75vw;
+    margin: 0;
+    position: relative;
+}
+
+.point {
+    width: 1vw;
+    height: 1vw;
+    cursor: pointer;
+}
+
+.places-list-wrapper {
+    width: 75vw;
+    position: absolute;
+    top: 0;
+    // height: 50vw;
+}
+
+.single-place {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.tooltips-list {
+    list-style: none;
+    padding: 0px 5px;
+}
+
+.tooltip-container {
+    margin: 3px 0;
+}
+
+.tooltip-place {
+    width: 101%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-bottom: -2px;
+}
+
+.preview-open {
+    opacity: 0.5;
+    pointer-events: none;
+}
