@@ -7,7 +7,7 @@
 
 .places-side-list {
     list-style: none;
-    padding: 0;
+    padding: 0 0 15px 0;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -34,7 +34,7 @@
 
 @media (max-width: 999px) {
     .places-side-list-wrapper {
-      width: 100vw;
+      width: calc(100vw - 10px);
       border-right: none;
       border-bottom: 1px solid;
       height: 15vh;
@@ -50,11 +50,5 @@
     .side-place-name {
         font-size: small;
         margin: 0 5px 0 5px;
-    }
-}
-
-@media (max-width: 500px) { 
-    .places-side-list-wrapper {
-        max-height: 20vh;
     }
 }

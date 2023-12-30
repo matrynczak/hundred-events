@@ -5,6 +5,7 @@
     height: 95vh;
     margin-top: -5vh;
     overflow-y: scroll;
+    z-index: 1;
 }
 
 .preview-back {
@@ -146,7 +147,7 @@
 @media (max-width: 999px) {
     .preview-container {
         margin-left: 100vw;
-        height: calc(79vh + 6px);
+        height: calc(80vh - 3px);
     }
 
     .preview-content {
@@ -175,8 +176,12 @@
 @media (max-width: 500px) {
     .preview-container {
         margin-left: 100vw;
-        height: 73vh;
-        margin-top: -12vh;
+        height: calc(79vh - 13px);
+        margin-top: -10vh;
+    }
+
+    .preview-desc {
+        font-size: smaller;
     }
 
     .animation-in {

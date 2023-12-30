@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .page-content {
@@ -12,10 +12,6 @@
 }
 
 @media (max-width: 999px) {
-  .App {
-    min-height: 0;
-  }
-
   .page-content {
     flex-direction: column;
     min-height: 0;
