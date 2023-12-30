@@ -1,11 +1,13 @@
 .places-side-list-wrapper {
     width: 20vw;
     border-right: 3px solid;
+    overflow-y: scroll;
+    max-height: 95vh;
 }
 
 .places-side-list {
     list-style: none;
-    padding: 0;
+    padding: 0 0 15px 0;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -28,4 +30,25 @@
 .active-place {
     background-color: black;
     color: white;
+}
+
+@media (max-width: 999px) {
+    .places-side-list-wrapper {
+      width: calc(100vw - 10px);
+      border-right: none;
+      border-bottom: 1px solid;
+      height: 15vh;
+      padding: 0 5px 0 5px;
+    }
+
+    .places-side-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .side-place-name {
+        font-size: small;
+        margin: 0 5px 0 5px;
+    }
 }

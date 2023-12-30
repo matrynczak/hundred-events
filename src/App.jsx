@@ -4,6 +4,7 @@ import PlacesList from './components/PlacesList/PlacesList';
 import { placesMock } from '../src/components/placesListMock';
 import { useState } from 'react';
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
         <PlacesList places={placesMock} selectedPlace={selectedPlace} handleSelectedPlace={handleSelectedPlace}/>
         <Map places={placesMock} selectedPlace={selectedPlace} handleSelectedPlace={handleSelectedPlace}/>
       </div>
-      
+      <Footer />
     </div>
   );
 }

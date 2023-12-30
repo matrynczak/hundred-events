@@ -1,7 +1,6 @@
 .places-list-map {
     list-style: none;
     padding: 0;
-    // height: 50vw;
     width: 75vw;
     margin: 0;
     position: relative;
@@ -17,7 +16,6 @@
     width: 75vw;
     position: absolute;
     top: 0;
-    // height: 50vw;
 }
 
 .single-place {
@@ -48,4 +46,11 @@
 .preview-open {
     opacity: 0.5;
     pointer-events: none;
+}
+
+@media (max-width: 999px) {
+    .point {
+        width: 2vw;
+        height: 2vw;
+    }
 }
