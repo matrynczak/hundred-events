@@ -43,7 +43,7 @@ const Places = ({places, selectedPlace, handleSelectedPlace}) => {
                 {
                     list.map((el)=> (
                         name === el.name && 
-                            <li className='tooltip-container'>
+                            <li className='tooltip-container' key={el.title}> 
                                 <Tooltip place={el}tooltipList={tooltipList} handleSingleTooltipSelection={handleSingleTooltipSelection} handleSelectedPlace={handleSelectedPlace} handleTooltipPreview={handleTooltipPreview}/>
                             </li>                
                         )                    

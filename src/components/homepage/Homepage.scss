@@ -1,0 +1,19 @@
+.homepage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .page-content {
+    display: flex;
+    text-align: center;
+    min-height: 95vh;
+  }
+  
+  @media (max-width: 999px) {
+    .page-content {
+      flex-direction: column;
+      min-height: 0;
+    }
+  }

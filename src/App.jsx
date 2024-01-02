@@ -1,26 +1,18 @@
-import './App.css';
-import Map from './components/map/Map';
-import PlacesList from './components/PlacesList/PlacesList';
-import { placesMock } from '../src/components/placesListMock';
-import { useState } from 'react';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import Router from "./Router";
+import { EventsContext } from '../src/components/EventsContext';
+import { useState } from "react";
 
 function App() {
 
-  const [selectedPlace, setSelectedPlace] = useState(null);
-
-  const handleSelectedPlace = (place) => setSelectedPlace(place);
+  const [eventsList, setEventsList] = useState([])
 
   return (
-    <div className="App">
-      <Header />
-      <div className='page-content'>
-        <PlacesList places={placesMock} selectedPlace={selectedPlace} handleSelectedPlace={handleSelectedPlace}/>
-        <Map places={placesMock} selectedPlace={selectedPlace} handleSelectedPlace={handleSelectedPlace}/>
+    <EventsContext.Provider value={[eventsList, setEventsList]}>
+      <div className="App">
+        <Router />
       </div>
-      <Footer />
-    </div>
+    </EventsContext.Provider>
+    
   );
 }
 
