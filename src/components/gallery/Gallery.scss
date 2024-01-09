@@ -1,0 +1,32 @@
+.gallery-container {
+    list-style: none;
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 3vh 2vw;
+}
+
+.single-image-picture {
+    height: 20vw;
+    cursor: pointer;
+}
+
+.single-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed;
+    padding: 5px 10px;
+    background-color: antiquewhite;
+    min-width: 25vw;
+    
+}
+
+h5 {
+    margin: 0;
+    text-align: center;
+    width: 25vw;
+}

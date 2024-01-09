@@ -33,10 +33,6 @@ const Places = ({places, selectedPlace, handleSelectedPlace}) => {
     }, [selectedPlace])
 
     const renderTooltips = (list, name) => {
-        const newList = [];
-        list.forEach(i => {
-            newList.push(i)
-        })
         return (
             <ul className='tooltips-list'>
                 <span className='tooltip-place'>{name}</span>
@@ -44,7 +40,7 @@ const Places = ({places, selectedPlace, handleSelectedPlace}) => {
                     list.map((el)=> (
                         name === el.name && 
                             <li className='tooltip-container' key={el.title}> 
-                                <Tooltip place={el}tooltipList={tooltipList} handleSingleTooltipSelection={handleSingleTooltipSelection} handleSelectedPlace={handleSelectedPlace} handleTooltipPreview={handleTooltipPreview}/>
+                                <Tooltip place={el} tooltipList={tooltipList} handleSingleTooltipSelection={handleSingleTooltipSelection} handleSelectedPlace={handleSelectedPlace} handleTooltipPreview={handleTooltipPreview}/>
                             </li>                
                         )                    
                     )

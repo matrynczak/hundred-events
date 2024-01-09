@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Preview.scss';
+import { NavLink } from "react-router-dom";
 
 const Preview = ({selectedTooltipToPreview, handleTooltipPreview}) => {
 
@@ -22,9 +23,11 @@ const Preview = ({selectedTooltipToPreview, handleTooltipPreview}) => {
                 <span className='preview-title'>
                     {selectedTooltipToPreview.title}
                 </span>
-                <span className='preview-more-link'>
+                <NavLink to={`/${selectedTooltipToPreview.urlId}`} className="event-link">
+                    <span className='preview-more-link'>
                     Dowiedz się więcej...
-                </span>
+                     </span>
+                </NavLink>
                 <span className='preview-place'>
                     <span>Miejsce</span>
                     <span>{selectedTooltipToPreview.name}</span>
@@ -37,8 +40,6 @@ const Preview = ({selectedTooltipToPreview, handleTooltipPreview}) => {
                     {selectedTooltipToPreview.description}
                 </span>
             </div>
-            
-            
         </div>
     )
 }

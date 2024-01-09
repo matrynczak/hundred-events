@@ -1,8 +1,7 @@
 import './Homepage.scss';
 import Map from '../map/Map';
 import PlacesList from '../PlacesList/PlacesList';
-import { placesMock } from '../placesListMock';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import { EventsContext } from '../EventsContext';
@@ -13,11 +12,7 @@ const Homepage = () => {
 
   const handleSelectedPlace = (place) => setSelectedPlace(place);
 
-  const [eventsList, setEventsList] = useContext(EventsContext);
-
-  useEffect(() => {
-    setEventsList(placesMock)
-  }, [])
+  const eventsList = useContext(EventsContext);
 
   return (
     <div className="homepage">

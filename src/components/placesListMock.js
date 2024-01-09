@@ -7,7 +7,38 @@ export const placesMock = [
         name: 'Gniezno',
         title: 'Zjazd gnieźnieński',
         year: '1000',
-        description: 'Otton III przybył do Gniezna, aby pomodlić się przy grobie pierwszego polskiego męczennika – św. Wojciecha, który zginął trzy lata wcześniej z rąk pogańskich Prusów[1]. Cesarz spotkał się tam również z księciem Bolesławem – ówczesnym władcą Polski. Celem tego spotkania było pozyskanie przez cesarza przychylności i poparcia księcia do utworzenia zachodniego cesarstwa uniwersalistycznego, na które miały złożyć się prowincje, każda z królem, podlegającym cesarzowi: Galia, Italia, Germania, Słowiańszczyzna.'
+        description: 'Inaczej nazywany też synodem gnieźnieńskim. Była to pielgrzymka cesarza Ottona III do grobu św. Wojciecha, a także spotkanie z księciem Polski Bolesławem w ówczesnej stolicy państwa – Gnieźnie. Zjazd odbył się w marcu 1000 roku.',
+        descLong: [
+            {
+                title: 'Cele zjazdu',
+                text: 'Otton III przybył do Gniezna, aby pomodlić się przy grobie pierwszego polskiego męczennika – św. Wojciecha, który zginął trzy lata wcześniej z rąk pogańskich Prusów[1]. Cesarz spotkał się tam również z księciem Bolesławem – ówczesnym władcą Polski. Celem tego spotkania było pozyskanie przez cesarza przychylności i poparcia księcia do utworzenia zachodniego cesarstwa uniwersalistycznego, na które miały złożyć się prowincje, każda z królem, podlegającym cesarzowi: Galia, Italia, Germania, Słowiańszczyzna.'
+            },
+            {
+                title: 'Przebieg i skutki zjazdu',
+                text: 'Zjazd odbył się między 7 a 15 marca 1000 roku w Gnieźnie. Do grobu św. Wojciecha przybył cesarz Otton III. Po modlitwie w katedrze spotkał się z księciem Bolesławem. Podczas zjazdu Otton nałożył na jego głowę diadem i wręczył kopię włóczni św. Maurycego. W zamian cesarz otrzymał od księcia część relikwii św. Wojciecha. Bolesław przychylił się do planów cesarza o Wielkim Cesarstwie. Najdonioślejszym efektem zjazdu było utworzenie metropolii gnieźnieńskiej – pierwszej metropolii kościelnej w Polsce podległej wyłącznie papieżowi, na czele której postawiono brata św. Wojciecha – Radzima Gaudentego. Wraz z powstaniem nowej metropolii utworzono podległe Gnieznu nowe biskupstwa - sufraganie: krakowską z biskupem Popponem, kołobrzeską z biskupem Reinbernem i wrocławską z biskupem Janem. Biskupstwo poznańskie pozostało poza metropolią gnieźnieńską aż do śmierci biskupa Ungera.',
+                text: 'Zjazd z pewnością przyczynił się do umocnienia pozycji Bolesława wobec władców państw sąsiadujących z Polską. Tradycję synodu gnieźnieńskiego (w jego wymiarze kościelnym i europejskim) obecnie podtrzymuje Fundacja św. Wojciecha, która organizuje od 1997 roku kolejne zjazdy gnieźnieńskie.'
+            }
+        ],
+        source: [
+            'Odnośnie do rytuału pokutnego, czyli przyjścia do Gniezna boso, zob.: Gerd Althoff, Potęga Rytuału. Symbolika władzy w średniowieczu, Wydawnictwo Naukowe PWN, 2011, ISBN 978-83-01-16592-5',
+            'Historia Zjazdów gnieźnieńskich. zjazd.org. [zarchiwizowane z tego adresu (2018-04-20)].',
+            'gnieźnieński zjazd, [w:] Encyklopedia PWN [online] [dostęp 2011-08-01].'
+        ],
+        urlId: 'zjazd-gnieznienski',
+        images: [
+            {
+                title: 'Polska za panowania Bolesława Chrobrego.',
+                original: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Polska_992_-_1025.png/2141px-Polska_992_-_1025.png',
+            },
+            {
+                title: 'Włócznia św. Maurycego wręczona Bolesławowi Chrobremu przez Ottona III w trakcie zjazdu.',
+                original: 'https://upload.wikimedia.org/wikipedia/commons/1/12/Maurycy.jpg'
+            },
+            {
+                title: 'Otton III nakłada koronę B. Chrobremu - rycina Macieja Miechowity z 1519 roku.',
+                original: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Chronica_Polonorum_Coronatio_Boleslaus_Chrabri.png'
+            }
+        ]
     },
     {
         top: '10',

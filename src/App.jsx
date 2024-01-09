@@ -1,13 +1,18 @@
 import Router from "./Router";
 import { EventsContext } from '../src/components/EventsContext';
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { placesMock } from "./components/placesListMock";
 
 function App() {
 
   const [eventsList, setEventsList] = useState([])
 
+  useEffect(() => {
+    setEventsList(placesMock)
+  }, [])
+
   return (
-    <EventsContext.Provider value={[eventsList, setEventsList]}>
+    <EventsContext.Provider value={eventsList}>
       <div className="App">
         <Router />
       </div>
