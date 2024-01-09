@@ -1,0 +1,38 @@
+.image-gallery-image {
+    height: 10vh;
+}
+
+.image-gallery-slide {
+    height: 100%;
+}
+
+.article-body {
+    width: calc(95vw - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 2.5vw solid;
+    border-right: 2.55vw solid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.article-title {
+    text-decoration: underline;
+}
+
+.section-title {
+    text-decoration: underline;
+}
+
+.article-sources {
+    margin-top: 10vh;
+    padding: 0;
+    font-size: small;
+    list-style: auto;
+}
+
+.article-source-single {
+    margin-left: 2vw;
+}

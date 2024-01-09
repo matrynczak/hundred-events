@@ -2,7 +2,6 @@ import './PlacesList.scss';
 import { getArrayWithoutDuplicates } from '../../utils/helpers';
 
 const PlacesList = ({places, selectedPlace, handleSelectedPlace}) => {
-
     const placesOnly = places.map(p => p.name);
     const placesWithoutDuplicates = getArrayWithoutDuplicates(placesOnly)
 
